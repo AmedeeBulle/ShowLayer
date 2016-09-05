@@ -10,11 +10,14 @@ class ShowLayer(Script):
     def __init__(self):
         super().__init__()
         
-    def getSettingData(self):
-        return { 
-            "label":"Show Layer",
-            "key": "ShowLayer"
-        }
+    def getSettingDataString(self):
+        return """{ 
+            "name":"Show Layer",
+            "key": "ShowLayer",
+            "metadata": {},
+            "version": 2,
+            "settings": {}
+        }"""
     
     def execute(self, data):
         count = "-"
